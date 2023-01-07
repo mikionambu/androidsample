@@ -18,7 +18,7 @@ class MainActivity(var EXTRA_MESSAGE: String) : AppCompatActivity() {
             DisplayMessageActivity::class.java)
         val editText: EditText = findViewById(R.id.edittext) as EditText
         val message: String = editText.text.toString()
-        val putExtra = intent.putExtra(EXTRA_MESSAGE, message)
+        val putExtra = intent.putExtra(EXTRA_MESSAGE, message="test")
         startActivity(intent)
     }
 }
