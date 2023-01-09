@@ -11,7 +11,7 @@ class DisplayMessageActivity : AppCompatActivity() {
         setContentView(R.layout.activity_display_message)
         // Activity開始時にIntentを取得し、文字列をセットする
         val intent: Intent = getIntent()
-        val message: String? = intent.getStringExtra(MainActivity().EXTRA_MESSAGE)
+        val message: String? = intent.getStringExtra(“KEY”)
         val textView: TextView = findViewById(R.id.textView)
         textView.setText(message)
     }
